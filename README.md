@@ -2,6 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
+
 # Project: Navigation and collect bananas
 
 ### Details
@@ -53,6 +54,7 @@ pip install .
 ```bash
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ```
+![Trained Agent][.optimal.png]
 
 4. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 #### Step 2
