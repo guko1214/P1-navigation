@@ -54,7 +54,7 @@ pip install .
 ```bash
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 ```
-![Trained Agent](.\optimal.png)
+![Trained Agent](optimal.png)
 
 4. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 #### Step 2
