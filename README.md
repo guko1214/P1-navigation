@@ -10,7 +10,7 @@ This project use Unity Machine Learning Agents (ML-Agents) served as environment
 
 ![Trained Agent][image1]
 
-The environment includes only one agent who 
+The environment includes only one agent who employs Deep Q-Network, which is value-based and deep-learning methods.
 
 A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
 
@@ -20,10 +20,12 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
+The task is episodic. When the agent get an average score of +13 over 100 consecutive episodes, the environment is condsidered to be solved.
 
 ### Getting Started
 
+
+# Step 2
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
     - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
