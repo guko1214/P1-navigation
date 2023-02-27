@@ -1,6 +1,6 @@
-#Project: Navigation and collect bananas
+# Project: Navigation and collect bananas
 
- ##learning algorithm
+ ## learning algorithm
 
  The learning algorithm behind the agent is a combination of Q Learning and nerual network.
 
