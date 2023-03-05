@@ -7,7 +7,7 @@
 
 ### Details
 
-This project use Unity Machine Learning Agents (ML-Agents) served as environments to train an agent to navigate (and collect bananas!) in a large, square world.
+This Udacity course project use Unity Machine Learning Agents (ML-Agents) served as environments to train an agent to navigate (and collect bananas!) in a large, square world.
 
 ![Trained Agent][image1]
 

@@ -1,22 +1,33 @@
 # Report of the Project: Navigation and collect bananas
 
- ## learning algorithm
+ ## Learning algorithm
 
- The learning algorithm behind the agent is a combination of Q Learning and nerual network. This combination is called Deep Q-Networks developed by DeepMind in 2015.
+ The learning algorithm behind the agent is a combination of Q Learning and nerual network. This combination is called Deep Q-Networks.
 
- Q Learning is value-based method from reinforcement learning. 
+ Q Learning is value-based method from reinforcement learning and represents the optimal action-value function by a Q-table.
+ In deep Q learning, the table is replaced by a neural network. However, reinforcement learning is unstable when nerual networds is used.
+ 
+ To address the problem, DeepMind developed experience replay and fixed Q Target in 2015.
+
+ ### Experience replay and Fixed Q-Targets
+ > when the agent interacts with the environment, the sequence of experience tuples can be highly correlated. If the Q learning algorithm learns these experience tuples in equential order, the action value oscillating or diverging catastrophically due to the correlation. To address, a replay buffer is kept to contains experience tuples and added gradually as the agent interacting with environemt. The experience replay sample small batch from the buffer randomly for learning, instead sequenced experience tuples.
+ Since the predicted Q values function is generated based on itself, the target Q network and predicted Q network is highly correlated which cause instablity. To solve the problem, the target Q network is copyied separately from the Q network, but updated periodically instead of each time step.
+
+## Training results
+
+![training result](train.png)
+
+![Score chart](chart.png)
+
+The environment was solved in 797 episodes.
 
 
 
+## Ideas for future work
 
-# Code implementation
+There are three enhancements would improve the agent's performance.
 
-The code implementation consists of two python files (dqn_agent.py.py and model.py.py) and on jupyter notebook.
+### Double DQN
 
-dqn_agent.py
+> In the update of Q-value, the current 
 
-
-model.py defines the deep neural network.
-The network consists of 
-
-# Ideas for future work
