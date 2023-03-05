@@ -2,6 +2,8 @@
 
  ## Learning algorithm
 
+ ### Deep Q Learning
+
  The learning algorithm behind the agent is a combination of Q Learning and nerual network. This combination is called Deep Q-Networks.
 
  Q Learning is value-based method from reinforcement learning and represents the optimal action-value function by a Q-table.
@@ -9,7 +11,7 @@
  
  To address the problem, DeepMind developed experience replay and fixed Q Target in 2015.
 
- ### Experience replay and Fixed Q-Targets
+ #### Experience replay and Fixed Q-Targets
  > when the agent interacts with the environment, the sequence of experience tuples can be highly correlated. If the Q learning algorithm learns these experience tuples in equential order, the action value oscillating or diverging catastrophically due to the correlation. To address, a replay buffer is kept to contains experience tuples and added gradually as the agent interacting with environemt. The experience replay sample small batch from the buffer randomly for learning, instead sequenced experience tuples.
  Since the predicted Q values function is generated based on itself, the target Q network and predicted Q network is highly correlated which cause instablity. To solve the problem, the target Q network is copyied separately from the Q network, but updated periodically instead of each time step.
 
