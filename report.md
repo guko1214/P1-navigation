@@ -27,9 +27,14 @@ The environment was solved in 797 episodes.
 
 ## Ideas for future work
 
-There are three enhancements would improve the agent's performance.
+There are two enhancements would improve the agent's performance.
 
-### Double DQN
+### Prioritized Experience Replay
+
+Instead of sampling experience buffer uniformly, more important buffer have higher priority and thus sampled with higher probability.
+To do so, the replay buffer is stored along with its calculated TD error. The bigger its error, the more we expect to learn and higher sampling probability is assigned.
+
+### Dueling DQN
 
 > In the update of Q-value, the current 
 
